@@ -1,0 +1,36 @@
+.user_card{
+    display: flex;    
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.user_card img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-brand-2);
+}
+
+.user_card div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem
+}
+
+.repository_card{
+    width: 48%;
+    border: 2px solid var(--color-grey-3);
+    border-radius: var(--radius-1);   
+    padding: 2.5rem 1.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.313rem;    
+}
+.repository_card:hover{
+    border-color: var(--color-grey-7);
+    background-color: var(--color-grey-1);
+}
+.repository_card div{ 
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,20 @@
+.input_user{
+    height: 2.375rem;
+    padding-left: 0.813rem;
+    background: var(--color-grey-1);
+    color: var(--color-grey-7);
+    border: 1px solid var(--color-grey-4);
+    border-radius: var(--radius-2);
+}
+.input_user::placeholder{
+    color: var(--color-grey-4);
+}
+.input_user:hover{
+    border-color: var(--color-grey-7);   
+}
+.input_user:focus{
+    border-color: var(--color-grey-7);   
+}
+.not_found{
+    border-color: (var(--color-brand-1));
+}

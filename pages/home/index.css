@@ -1,1 +1,49 @@
-/* Desenvolva sua estilização aqui...*/
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    background-color: var(--color-grey-2);   
+}
+
+ main > section{
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-brand-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 9.375rem;
+    gap: 2.313rem;
+}
+
+ main > form{
+    width: 50%;
+    height: 100%;
+ }
+
+ main > section div{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+main > section img{
+    width: 2.75rem;
+    height: 2.75rem;  
+    border-style: none;
+    border-radius: 50%;
+    cursor: pointer;    
+}
+
+main > section img:hover{
+    border: 1px solid var(--color-grey-7);
+}
+
+main > form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 11rem;
+    gap: 1rem;
+}
