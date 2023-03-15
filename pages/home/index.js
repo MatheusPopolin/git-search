@@ -27,8 +27,14 @@ createLastUserCards();
 
 const findButton = document.getElementById("findButton");
 const inputUser = document.getElementById("inputUser");
-inputUser.addEventListener("keyup",()=>{
-    findButton.removeAttribute("disabled");
+inputUser.addEventListener("keyup",(event)=>{
+    if(event.target.value.length>0){
+        console.log(event.target.value.length)
+        findButton.removeAttribute("disabled");
+    }else{
+        findButton.setAttribute("disabled", true);
+    }
+
 })
 
 function findGithubUser() {    
@@ -36,7 +42,7 @@ function findGithubUser() {
     form.addEventListener("submit",async event=>{
         event.preventDefault();
         findButton.innerText="";
-        findButton.insertAdjacentHTML("afterbegin",`<img src="/assets/spinner.png" alt="loading" class="loading">`);
+        findButton.insertAdjacentHTML("afterbegin",`<img src="../../assets/spinner.png" alt="loading" class="loading">`);
         const userName = form.elements[0].value;
         try {
             const response = await fetch(`https://api.github.com/users/${userName}`, {

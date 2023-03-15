@@ -12,7 +12,7 @@ function createHeader(user){
             </div>
             <div class="menu">
                 <a href="mailto:${email}" class="button_default title_5" target="blank">Email</a>
-                <a href="/pages/home/" class="button_default title_5">Trocar de Usuário</a>
+                <a href="../home/" class="button_default title_5">Trocar de Usuário</a>
             </div>
         </header>`);
     return body;
