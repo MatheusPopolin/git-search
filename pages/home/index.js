@@ -62,7 +62,7 @@ function findGithubUser() {
                 const lastUsersJson = JSON.stringify(lastUsers);
                 localStorage.setItem("lastUsers", lastUsersJson);
                 localStorage.setItem("gitHubUser", userJson);   
-                window.location.replace("/pages/profile/index.html");
+                window.location.replace("../pages/profile/index.html");
             } else{
                 document.getElementById("notFound").classList.remove("none");
                 findButton.innerHTML = "";
