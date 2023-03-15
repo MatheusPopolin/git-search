@@ -18,7 +18,7 @@ function createLastUserCards(){
         imgUser.alt = name;
         imgUser.addEventListener("click",()=>{
             localStorage.setItem("gitHubUser", userJson);
-            window.location.replace("/pages/profile/index.html");
+            window.location.replace("../pages/profile/");
         })              
         divLastUsers.appendChild(imgUser);
     })
