@@ -18,7 +18,7 @@ function createLastUserCards(){
         imgUser.alt = name;
         imgUser.addEventListener("click",()=>{
             localStorage.setItem("gitHubUser", userJson);
-            window.location.replace("../pages/profile/");
+            window.location.replace("../profile/");
         })              
         divLastUsers.appendChild(imgUser);
     })
@@ -62,7 +62,7 @@ function findGithubUser() {
                 const lastUsersJson = JSON.stringify(lastUsers);
                 localStorage.setItem("lastUsers", lastUsersJson);
                 localStorage.setItem("gitHubUser", userJson);   
-                window.location.replace("../pages/profile/index.html");
+                window.location.replace("../profile/");
             } else{
                 document.getElementById("notFound").classList.remove("none");
                 findButton.innerHTML = "";
